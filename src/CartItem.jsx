@@ -35,12 +35,22 @@ const CartItem = ({ onContinueShopping }) => {
    }
    else {
     dispatch(removeItem({name: item.name}));
-   }
+    setAddedToCart(prev => {
+        const updated = { ...prev };
+        delete updated[item.name]; // Or set to false
+        return updated;
+      });
+   };
    
   };
 
   const handleRemove = (item) => {
     dispatch(removeItem({name: item.name}));
+    setAddedToCart(prev => {
+        const updated = { ...prev };
+        delete updated[item.name]; // Or set to false
+        return updated;
+      });
   };
 
   // Calculate total cost based on quantity for an item

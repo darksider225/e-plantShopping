@@ -39,6 +39,16 @@ body {
    
 }
 
+.logo-text
+{
+    padding-left: 20px;
+}
+.plant-header
+{
+    text-align: center;
+    margin-left: 300px;
+}
+
 /* Product Grid */
 .product-grid {
     display:flex;
@@ -47,6 +57,21 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.section-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2e2e2e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e2e2e;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;          /* Centers text within the full-width block */
+  }
+  
+  
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +189,30 @@ body {
     color: white;
     display: flex;
 }
+
+.cart-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: 23px;         /* 🛠 Adjust based on SVG height */
+    left: 34px;        /* 🛠 Nudge into the cart bowl area */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  
 .cart_quantity_count{
     margin-top: 16px;
     /* background-color: red; */
